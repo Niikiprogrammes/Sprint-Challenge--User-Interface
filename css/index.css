@@ -16,20 +16,22 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+	margin: 10%;
+	padding: 10;
+	border: 10;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+   
+ 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
+    
 }
 body {
-	line-height: 1;
+	line-height: 3;
 }
 ol, ul {
 	list-style: none;
@@ -53,22 +55,25 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif
 }
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+ 
+   
 }
 
 p {
     line-height: 1.4;
+
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+    width: 20px;
+    margin: 20px;
 }
 
 .top-content {
@@ -81,66 +86,106 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 10 6%;
+    padding-bottom: 20px; 
+    height: 20; 
+    color: darkred;
+
 }
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: 6px dashed  crimson;
+    padding: 10 20%;
+    padding-bottom:  20px;
+    height: 20;
+    
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+    padding: 10 20%;
+    margin-bottom: 9;
+    border-bottom: crimson;
+    color: cornflowerblue;
+   
+   
 }
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    scroll-padding-bottom: 6px dashed crimson;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
+    width: 15%;
+    height: 20px;
+    background: blue;
     margin: 20px 2.5%;
-    color: white;
+    color: rgb(241, 20, 20);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 05 10 20px;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding:  10% 20%;
+    margin: 05 10 20px;
+    width: 20px;
+    height: 20px;
+    color: rgb(40, 161, 161);
+    display: flex;
+    flex-direction: left;
+    
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  text-align: center;
+  
 }
 
 footer {
     width: 100%;
     background: black;
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 footer nav {
     width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
+    align-items: baseline;
+    padding: 10px 20%;
     font-size: 14px;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+    color: crimson;
+    text-decoration: black;
+    font-family: 'Times New Roman', Times, serif;
 }
+p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-container {
+  text-align: right;  
+}
+
+
+
+
+
