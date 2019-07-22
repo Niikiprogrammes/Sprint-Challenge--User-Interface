@@ -16,22 +16,20 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 10%;
-	padding: 10;
-	border: 10;
+	margin: 0;
+	padding: 0;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
-   
- 
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
-    
+	display: block;
 }
 body {
-	line-height: 3;
+	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -55,25 +53,53 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
-    font-family: 'Times New Roman', Times, serif;
- 
-   
+    font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
-
 }
 
 .container {
-    width: 20px;
-    margin: 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+header .logo {
+    width: 157px;
+    height: 40px;
+    background: black;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+header nav a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.jumbotron {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
 .top-content {
@@ -86,106 +112,145 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 10 6%;
-    padding-bottom: 20px; 
-    height: 20; 
-    color: darkred;
-
+    padding: 0 1%;
+    padding-bottom: 20px;  
 }
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 6px dashed  crimson;
-    padding: 10 20%;
-    padding-bottom:  20px;
-    height: 20;
-    
+    border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 10 20%;
-    margin-bottom: 9;
-    border-bottom: crimson;
-    color: cornflowerblue;
-   
-   
+    padding: 0 2%;
+    margin-bottom: 0;
 }
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    scroll-padding-bottom: 6px dashed crimson;
 }
 
 .middle-content .boxes .box {
-    width: 15%;
-    height: 20px;
-    background: blue;
+    width: 12.5%;
+    height: 100px;
+    background: black;
     margin: 20px 2.5%;
-    color: rgb(241, 20, 20);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
 }
 
 .bottom-content {
     display: flex;
-    margin: 05 10 20px;
+    margin: 0 2% 20px;
     justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 10 20px;
-    width: 20px;
-    height: 20px;
 }
 
 .bottom-content .text-container {
-    padding:  10% 20%;
-    margin: 05 10 20px;
-    width: 20px;
-    height: 20px;
-    color: rgb(40, 161, 161);
-    display: flex;
-    flex-direction: left;
-    
+    padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+.about-page .about-top {
+ display: flex;
+}
+
+.about-page .about-text {
+  width: 350px;
+}
+.about-page .about-intro {
+  padding: 0 20px 20px;
+  border-bottom: 1px dashed black;
+}
+
+.about-page .about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-page .about-content .about-box {
+  width: 370px;
+  margin: 30px 15px;
+  border-bottom: 1px dashed black;
+
+}
+
+.about-page .about-content .about-box h2 {
+  margin-top: 10px;
+}
+
+.about-page .about-content .about-box .about-btn {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 130px;
   text-align: center;
-  
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.about-page .about-content .about-box .about-btn:hover {
+  background: black;
+  color: white;
+}
+
+
+.about-page .about-footer-content {
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 footer {
     width: 100%;
     background: black;
-    color: crimson;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 footer nav {
     width: 60%;
     display: flex;
-    align-items: baseline;
-    padding: 10px 20%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
     font-size: 14px;
 }
 
 footer nav a {
-    color: crimson;
-    text-decoration: black;
-    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
 }
-p {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+div{
+color: teal;
 }
-
-.text-container {
-  text-align: right;  
+.box1{
+color: gold;
 }
-
-
-
-
-
+.box2{
+color: cadetblue;
+}
+.box3{
+color: coral;
+}
+.box4{
+color: crimson;
+}
+.box5{
+color: forestgreen;
+}
+.box6{
+color: darkorchid;
+}
+.box7{
+color: hotpink;
+}
+.box8{
+color: indigo;
+}
+.box9{
+ color: dodgerblue;   
+}
